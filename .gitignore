@@ -1,0 +1,4 @@
+api_key.txt
+bin/
+*.jar
+api_test/target/
