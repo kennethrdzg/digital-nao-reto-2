@@ -1,4 +1,3 @@
-api_key.txt
-bin/
+apiKey.env
 *.jar
 reto_2/target
