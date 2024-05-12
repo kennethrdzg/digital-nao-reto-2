@@ -1,12 +1,12 @@
-package com.kennethrdzg.autor;
-public class Autor{
+package com.kennethrdzg.investigador;
+public class Investigador{
     private String id;
     private String nombre;
     private String link;
     private int citado_por;
     private String email;
     private String afiliaciones;
-    public Autor(String id, String nombre, String link, int citado_por, String email, String afiliaciones){
+    public Investigador(String id, String nombre, String link, int citado_por, String email, String afiliaciones){
         this.id = id;
         this.nombre = nombre;
         this.link = link;
