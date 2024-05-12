@@ -5,13 +5,14 @@ public class Autor{
     private String link;
     private int citado_por;
     private String email;
-
-    public Autor(String id, String nombre, String link, int citado_por, String email){
+    private String afiliaciones;
+    public Autor(String id, String nombre, String link, int citado_por, String email, String afiliaciones){
         this.id = id;
         this.nombre = nombre;
         this.link = link;
         this.citado_por = citado_por;
         this.email = email;
+        this.afiliaciones = afiliaciones;
     }
 
     // Id
@@ -54,6 +55,14 @@ public class Autor{
 
     public void setEmail(String email){
         this.email = email;
+    }
+    // Afiliaciones
+    public String getAfiliaciones(){
+        return afiliaciones;
+    }
+
+    public void setAfiliaciones(String afiliaciones){
+        this.afiliaciones = afiliaciones;
     }
 
 }
