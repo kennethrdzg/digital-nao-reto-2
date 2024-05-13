@@ -67,7 +67,7 @@ public class ControladorInvestigadores{
             statement.setString(1, investigador.getId());
             statement.setString(2, investigador.getNombre());
             statement.setString(3, investigador.getLink());
-            statement.setString(4, Integer.toString(investigador.getCitadoPor()));
+            statement.setInt(4, investigador.getCitadoPor());
             statement.setString(5, investigador.getEmail());
             statement.setString(6, investigador.getAfiliaciones());
             statement.executeUpdate();
