@@ -6,6 +6,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.sql.*;
@@ -52,7 +53,14 @@ public class ControladorInvestigadores{
                 email = investigadorJsonObject.getString("email");
             }
             String afiliaciones = investigadorJsonObject.getString("affiliations");
-            int citado_por = investigadorJsonObject.getInt("cited_by");
+            int citado_por = 0; 
+            try{
+                citado_por = investigadorJsonObject.getInt("cited_by");
+            }
+            catch(JSONException e){
+                citado_por = 0;
+            }
+
             Investigador investigador = new Investigador(id, nombre, link, citado_por, email, afiliaciones);
             modelo.agregarInvestigador(investigador);
         }

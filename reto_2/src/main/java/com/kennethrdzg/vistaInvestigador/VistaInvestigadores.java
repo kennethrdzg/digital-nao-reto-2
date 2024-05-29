@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import com.kennethrdzg.investigador.Investigador;
 
 public class VistaInvestigadores{
-    public void mostrarAutor(Investigador investigador){
+    public void mostrarInvestigador(Investigador investigador){
         System.out.println("ID: " + investigador.getId());
         System.out.println("Nombre: " + investigador.getNombre());
         System.out.println("Link: " + investigador.getLink());
@@ -14,7 +14,7 @@ public class VistaInvestigadores{
     }
     public void mostrarInvestigadores(ArrayList<Investigador> investigadores){
         for(Investigador investigador: investigadores){
-            mostrarAutor(investigador);
+            mostrarInvestigador(investigador);
             System.out.println("--------------------");
         }
     }

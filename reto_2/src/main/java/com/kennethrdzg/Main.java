@@ -29,7 +29,7 @@ public class Main {
             System.exit(1);
         }
 
-        String apiURL = "https://serpapi.com/search.json?engine=google_scholar_profiles&mauthors=UANL&api_key=" + apiKey;
+        String apiURL = "https://serpapi.com/search.json?engine=google_scholar_profiles&mauthors=uanl&api_key=" + apiKey;
 
         // Crear instancia de vista y controlador
         Connection conexion = null;

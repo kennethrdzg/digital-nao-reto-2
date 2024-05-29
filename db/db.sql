@@ -9,3 +9,4 @@ CREATE TABLE IF NOT EXISTS autores (
     Afiliaciones VARCHAR(255)
 );
 SELECT * FROM autores;
+DELETE FROM autores;
